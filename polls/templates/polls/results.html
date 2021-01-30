@@ -1,14 +1,11 @@
-<p>
-  <a href="/polls/">Polls</a>
-</p>
-
-<h1>{{ question.question_text }}</h1>
+<h1>{{question.question_text}}</h1>
 
 <ul>
 {% for choice in question.choice_set.all %}
   <li>
-    {{ choice.choice_text }} &ndash;
-    {{ choice.votes }} vote{{ choice.votes|pluralize}}
+    {{ choice.choice_text }} --
+    {{ choice.votes}}
+    vote{{ choice.votes|pluralize}}
   </li>
 {% endfor %}
 </ul>

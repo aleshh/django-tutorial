@@ -1,5 +1,7 @@
 body {
-  background: white url("images/white-waves.png") repeat;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  background: white url("images/background.png");
 }
 
 li a {
